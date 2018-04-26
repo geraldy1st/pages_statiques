@@ -1,1 +1,3 @@
 # pages_statiques
+
+yo
