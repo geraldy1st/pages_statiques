@@ -19,4 +19,8 @@ class StaticController < ApplicationController
   def users_controller
   end
 
+  def users
+
+  end
+
 end

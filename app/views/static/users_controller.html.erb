@@ -1,18 +1,16 @@
 <div class="container">
-  <h1>user!</h1>
-<p>Bienvenue sur ma page d'accueil ⛵️🎓😇</p>
 
+<h1>Bienvenue sur ma page d'accueil ⛵️🎓😇</h1>
+
+<div>
 <form class="" action="/" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  Ton prenom:
-  <input type="text" name="first_name"><br><br>
-  Ton nom:
-  <input type="text" name="last_name"><br><br>
+  <p>Username:</p>
+  <input type="text" name="username"><br><br>
+  <p>Bio:</p>
+  <input type="text" name="bio"><br><br>
   <input type="submit" name="Envoyer">
 </form>
-  <div class="container">
-  <ul class="container-fluid">
-    <li><img src=""><%= @user %></li>
-  </ul>
+
 </div>
 </div>
