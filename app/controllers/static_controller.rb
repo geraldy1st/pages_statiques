@@ -17,10 +17,10 @@ class StaticController < ApplicationController
   end
 
   def users_controller
+    puts params.inspect
   end
 
   def users
-
   end
 
 end
