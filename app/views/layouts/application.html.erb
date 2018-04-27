@@ -8,11 +8,47 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<style media="screen">
+  body{
+    background-color: #eee;
+  }
+  nav{
+     background-color: #444;
+     color: #FFF;
+     border-bottom: solid 1px #222;
+  }
+  .div_master{
+    padding-top: 5rem;
+  }
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: #f45;
+  }
+  li{
+    list-style: none;
+  }
+  button{
+    background-color: #333;
+  }
+  button:hover{
+    background-color: #A348B2;
+  }
+
+</style>
+
 
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand" href="/"><img style="width: 50px; height: 50px;" src="https://www.thehackingproject.org/assets/thp-logo-5f2f06c9444205a88123ca1de74646970e5a1dfb03698d02db33e5e62a60d6cd.png"></a>
-      <ul class="nav navbar-nav">
+      <a class="navbar-brand" href="/"><img src="https://www.thehackingproject.org/assets/thp-logo-5f2f06c9444205a88123ca1de74646970e5a1dfb03698d02db33e5e62a60d6cd.png"></a>
+      <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
@@ -24,6 +60,11 @@
         </li>
       </ul>
     </nav>
+    <div class="container div_master">
+
+
     <%= yield %>
+    </div>
   </body>
+
 </html>

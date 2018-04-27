@@ -6,8 +6,8 @@ class StaticController < ApplicationController
     # @user = User.first
     puts "numero magique: #{@random_num}"
     puts "jusqu'ici tout va bien"
-    @username = User.first
-    puts "ceci est mon user: #{@username}"
+    @user = User.first
+    puts "ceci est mon user: #{@user}"
   end
 
   def contact
@@ -16,7 +16,7 @@ class StaticController < ApplicationController
   def about
   end
 
-  def user
+  def users_controller
   end
 
 end
